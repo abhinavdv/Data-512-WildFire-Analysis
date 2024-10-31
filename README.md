@@ -1,49 +1,157 @@
 # Analyzing Air Quality Index (AQI) Data
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Goal
-The goal of this project is to analyze the Air Quality Index (AQI) data to understand the air quality trends over time and across different locations. The analysis involves cleaning, visualizing, and aggregating the AQI data to derive meaningful insights.
+
+The goal of this project is to study the affects of wildfire smoke on Philadelphia, PA and be able to get valuable insights during the process. First, we begin with understand how the wildfire has been historically and then try to compare it with AQI values to see if there is any connection. We also try to create a smoke estimate and try to predict how much the estimate is going to be in the next 20 years.
+
+## License
+
+### Data Related License:
+
+1. Wildland Fires data is provided by the USGS. The data is available under the [USGS Data Policy](https://www2.usgs.gov/datamanagement/dmpolicy.php).
+2. AQI data is accessed through the EPA API. This lies in the public domain and is not subject to domestic copyright protection.
+
+### Code Related License:
+
+Code has been used from the example notebook developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program. This code is provided under the Creative Commons CC-BY license.
+
+This project is licensed under the MIT License.
 
 ## Code Organization
+
 The code for this project is organized into the following notebooks:
 
-1. **1-getting_wildlife_data.ipynb**: This notebook retrieves and processes wildlife data, saving it to a JSON file for further analysis.
-2. **3-cleaning_and_visualizaton.ipynb**: This notebook performs data cleaning and visualization of the AQI data. It includes steps to filter, aggregate, and visualize the data.
-
-## Data Processing Steps
-### 1. Data Retrieval
-- **1-getting_wildlife_data.ipynb**: Retrieves wildlife data and saves it to a JSON file named `fire_distance_data.json`.
-
-### 2. Data Cleaning and Visualization
-- **3-cleaning_and_visualizaton.ipynb**: 
-    - Loads the AQI data.
-    - Filters out unnecessary columns and rows.
-    - Aggregates the data by various attributes such as date, site number, and parameter.
-    - Visualizes the AQI data over time and across different locations.
+1. **getting_wildlife_data.ipynb**: This notebook retrieves and processes wildlife data, saving it to a JSON file for further analysis.
+2. **getting_aqi_data.ipynb**: This notebook retrieves and processes AQI data, saving it to a JSON file for further analysis.
+3. **cleaning_visualizaton_and_modelling.ipynb**: This notebook performs data cleaning and visualization of the AQI data. It includes steps to filter, aggregate, and visualize the data.
 
 ## Generated Files
-Following are the intermediary files generated during the analysis:
+
+### Input files:
+
+The input file is around 2gb whihc is higher than allwed in github. The file can be downloaded from the following link: [Wildland Fires Data](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81). I have used the GeoJson data.
+
+### Intermediary files generated:
 
 - `fire_distance_data.json`: Contains the processed wildlife data.
 
+Schema:
+
+```
+{
+    "values":
+    [
+        {
+            "OBJECTID": 1,
+            "USGS_Assigned_ID": 1,
+            "Assigned_Fire_Type": "Wildfire",
+            "Fire_Year": 1860,
+            "Fire_Polygon_Tier": 1,
+            "Fire_Attribute_Tiers": "1 (1)",
+            "GIS_Acres": 3940.20708940724,
+            "GIS_Hectares": 1594.5452365353703,
+            "Source_Datasets": "Comb_National_NIFC_Interagency_Fire_Perimeter_History (1)",
+            "Listed_Fire_Types": "Wildfire (1)", "Listed_Fire_Names": "Big Quilcene River (1)",
+            "Listed_Fire_Codes": "No code provided (1)", "Listed_Fire_IDs": "",
+            "Listed_Fire_IRWIN_IDs": "",
+            "Listed_Fire_Dates": "Listed Other Fire Date(s): 2006-11-02 - NIFC DATE_CUR field (1)", "Listed_Fire_Causes": "",
+            "Listed_Fire_Cause_Class": "Undetermined (1)",
+            "Listed_Rx_Reported_Acres": null,
+            "Listed_Map_Digitize_Methods": "Other (1)",
+            "Wildfire_and_Rx_Flag": null,
+            "Overlap_Within_1_or_2_Flag": null,
+            "Circleness_Scale": 0.04758958417643999,
+            "Circle_Flag": null,
+            "Exclude_From_Summary_Rasters": "No",
+            "Shape_Length": 64888.449849380544,
+            "Shape_Area": 15945452.365353702,
+            "shortest_dist": [2409.963449983856, [47.84027067710629, -123.02441580365677]],
+            "avg_dist": 2412.263442630418
+            },
+            ...
+    ]
+}
+
+```
+
 Final files generated after the analysis are:
 
-- `aqi_df_unique`: A cleaned and filtered DataFrame containing unique AQI records.
+- `gaseous_aqi.json`: Contains all gaseous AQI data retrieved from API
+- `particulate_aqi.json`: Contains all particulate AQI data retrieved from API
+
+Both have same Schema:
+
+```
+[
+    {
+        "state_code": "42",
+        "county_code": "101",
+        "site_number": "0002",
+        "parameter_code": "42401",
+        "poc": 4,
+        "latitude": 39.957513,
+        "longitude": -75.1735,
+        "datum": "WGS84",
+        "parameter": "Sulfur dioxide",
+        "sample_duration_code": "1",
+        "sample_duration": "1 HOUR",
+        "pollutant_standard": "SO2 1-hour 2010",
+        "date_local": "1962-05-01",
+        "units_of_measure": "Parts per billion",
+        "event_type": "No Events",
+        "observation_count": 24,
+        "observation_percent": 100.0,
+        "validity_indicator": "Y",
+        "arithmetic_mean": 17.083333,
+        "first_max_value": 30.0,
+        "first_max_hour": 1,
+        "aqi": 43,
+        "method_code": "013",
+        "method": "INSTRUMENTAL - CONDUCTIMETRIC",
+        "local_site_name": null,
+        "site_address": "22ND ST & PARKWAY  PHILA  PA",
+        "state": "Pennsylvania", "county": "Philadelphia",
+        "city": "Philadelphia",
+        "cbsa_code": "37980",
+        "cbsa": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+        "date_of_last_change": "2013-06-11"
+    },
+    .....
+]
+
+```
+
+Note: These intermediary files are not available in github due to their large size. They can be generated by running the respective notebooks.
+
+### Output files generated:
+- 'visulization-1.png' - a histogram showing the number of fires occurring every 50 mile distance from Philedelphia for all fires ranging up to 1800 miles away from Philedelphia.
+- 'visulization-2.png' - a time series graph of total acres burned per year for the fires occurring in the specified distance from Philedelphia.
+- 'visulization-3.png' - a time series graph containing your fire smoke estimates Philedelphia and the AQI estimates for Philedelphia.
 
 ## Issues Faced / Special Considerations
+
 - Some records in the AQI data had missing values. These records were filtered out during the cleaning process.
 - Duplicate records were found in the AQI data. The first occurrence of each duplicate was retained, and the rest were removed.
-- The CSV files need to be placed in the appropriate paths for the notebooks to run successfully. This has been mentioned in each notebook.
+- The JSON files need to be placed in the appropriate paths for the notebooks to run successfully. This has been mentioned in each notebook.
+- The data is quite large and may take some time to process. It is recommended to run the notebooks on a machine with sufficient memory and processing power. Colab runs quickly.
 
 ## Research Implications
+
 The analysis of AQI data can provide insights into air quality trends and help identify areas with poor air quality. This information can be used to inform policy decisions and public health initiatives.
 
+## Code Attribution
 
-## Attribution
-1. A lot of code used in this notebook was developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program. 
-2. Some code for getting the AQI data has been adapted from work by Raagul Nagendran, a student in the same program.
+1. Some of the code used in this notebook was developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program.
+2. A method for getting the AQI data has been adapted from work by Raagul Nagendran, a student in the same program.
 3. The model for ARIMAX has been adapted from the work of Navya Eedula, a student in the same program.
 
 Appropriate attributions have been made in the code where necessary.
+
+
+References and API Documentation:
+1. AQS API: https://aqs.epa.gov/aqsweb/documents/data_api.html
+2. USGS Wildland Fires Data: https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81
+3. GeoJSON: https://geojson.org/
+4. AQI calculation: https://www.airnow.gov/aqi/aqi-basics/
+
+```
