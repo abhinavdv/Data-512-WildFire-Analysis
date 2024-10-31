@@ -153,5 +153,4 @@ References and API Documentation:
 2. USGS Wildland Fires Data: https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81
 3. GeoJSON: https://geojson.org/
 4. AQI calculation: https://www.airnow.gov/aqi/aqi-basics/
-
 ```
