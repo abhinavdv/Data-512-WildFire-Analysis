@@ -2,8 +2,7 @@
 
 ## Goal
 
-The goal of this project is to study the affects of wildfire smoke on Asthma cases and deaths in Philadelphia, PA and be able to get valuable insights during the process. First, we begin with understand how the wildfire has been historically and then try to compare it with AQI values to see if there is any connection. We also try to create a smoke estimate and try to predict how much the estimate is going to be in the next 20 years.
-
+The goal of this project is to study the affects of wildfire smoke on Asthma cases and deaths in Philadelphia, PA and be able to get valuable insights during the process. First, we begin with understand how the wildfire has been historically and then try to compare it with AQI values to see if there is any connection. We also try to create a smoke estimate and try to predict how much the estimate is going to be in the next 20 years. Using asthma hospitalizations and death data, we try to explain the impact of wildfire smoke on asthma.
 ## License
 
 ### Data Related License:
