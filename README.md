@@ -34,7 +34,7 @@ The code for this project is organized into the following notebooks:
 
 ### Input files:
 
-1. The input file is around 2gb whihc is higher than allwed in github. The file can be downloaded from the following link: [Wildland Fires Data](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81). I have used the GeoJson data.
+1. The input file is around 2gb which is higher than allowed in github. The file can be downloaded from the following link: [Wild Fires Data](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81). I have used the GeoJson data.
 2. **initial data files/all disease deaths 1999-2020.txt** -> This file contains the data for all respiratory disease deaths in Pennsylvania from 1999 to 2020. It is used in the 4-cleaning_asthma_data.ipynb notebook. It comes from the CDC.
 3. **initial data files/Asthma_deaths_cdc.txt** -> This file contains the data for asthma deaths in Pennsylvania from 1999 to 2020. It is used in the 4-cleaning_asthma_data.ipynb notebook. It comes from the CDC.
 4. **initial data files/death asthma by. age.txt** -> This file contains the data for asthma deaths in Pennsylvania by age group from 1999 to 2020. It is used in the 4-cleaning_asthma_data.ipynb notebook. It comes from the CDC.
@@ -194,9 +194,9 @@ Note: The above intermediary files are not available in github due to their larg
 
 ### Output files generated:
 
-- 'visulization-1.png' - a histogram showing the number of fires occurring every 50 mile distance from Philedelphia for all fires ranging up to 1800 miles away from Philedelphia.
-- 'visulization-2.png' - a time series graph of total acres burned per year for the fires occurring in the specified distance from Philedelphia.
-- 'visulization-3.png' - a time series graph containing your fire smoke estimates Philedelphia and the AQI estimates for Philedelphia.
+- visulization-1.png - a histogram showing the number of fires occurring every 50 mile distance from Philedelphia for all fires ranging up to 1800 miles away from Philedelphia.
+- visulization-2.png - a time series graph of total acres burned per year for the fires occurring in the specified distance from Philedelphia.
+- visulization-3.png - a time series graph containing your fire smoke estimates Philedelphia and the AQI estimates for Philedelphia.
 
 ## Packages Used:
 
