@@ -8,7 +8,7 @@ The goal of this project is to study the affects of wildfire smoke on Asthma cas
 
 ### Data Related License:
 
-1. Wildland Fires data is provided by the USGS. The data is available under the [USGS Data Policy](https://www2.usgs.gov/datamanagement/dmpolicy.php).
+1. Wildland Fires data is provided by the USGS. The data is available under the [USGS Data Policy](https://www.usgs.gov/programs/climate-adaptation-science-centers/data-policy-and-guidance).
 2. AQI data is accessed through the EPA API. This lies in the public domain and is not subject to domestic copyright protection.
 3. Asthma deaths data is available from the CDC. This data is available under the [CDC Data Policy](https://www.cdc.gov/other/privacy.html).
 4. Asthma hospitalizations data is from the PHC4. This data is available under the [PHC4 Data Policy](https://www.phc4.org/data/policies.htm). A tool named [EDDIE](https://www.phaim1.health.pa.gov/EDD/WebForms/HospitalDischargeCntySt.aspx) was used to access the data.
