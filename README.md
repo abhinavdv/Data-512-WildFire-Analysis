@@ -34,7 +34,7 @@ Run these files in order for best results.
 
 ## File Structure:
 # DATA-512-WILDFIRE-ANALYSIS
-
+```
 ├── __pycache__
 ├── .vscode
 ├── initial data files
@@ -69,6 +69,7 @@ Run these files in order for best results.
 ├── LICENSE
 ├── README.md
 └── Writeup DATA 512 Project Part -1.pdf
+```
 ## Generated Files
 
 ### Input files:
