@@ -1,0 +1,21 @@
+"Notes"	"Five-Year Age Groups"	"Five-Year Age Groups Code"	Deaths	Population	Crude Rate
+	"1-4 years"	"1-4"	13	1772566	Unreliable
+	"5-9 years"	"5-9"	19	2114933	Unreliable
+	"10-14 years"	"10-14"	23	2143200	1.1
+	"15-19 years"	"15-19"	17	2380646	Unreliable
+	"20-24 years"	"20-24"	31	2779242	1.1
+	"25-29 years"	"25-29"	42	3043562	1.4
+	"30-34 years"	"30-34"	55	2592284	2.1
+	"35-39 years"	"35-39"	69	2243155	3.1
+	"40-44 years"	"40-44"	71	2138404	3.3
+	"45-49 years"	"45-49"	134	2111621	6.3
+	"50-54 years"	"50-54"	164	2054037	8.0
+	"55-59 years"	"55-59"	176	1873009	9.4
+	"60-64 years "	"60-64"	136	1590517	8.6
+	"65-69 years"	"65-69"	104	1276211	8.1
+	"70-74 years"	"70-74"	93	1032487	9.0
+	"75-79 years"	"75-79"	97	839523	11.6
+	"80-84 years"	"80-84"	90	628446	14.3
+	"85-89 years"	"85-89"	82	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	51	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	14	Not Applicable	Not Applicable

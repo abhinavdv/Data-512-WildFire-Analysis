@@ -1,0 +1,26 @@
+﻿TRatePercent,Health_Events,Geography,Calendar_Year,Gender,Race_Ethnicity,Age,Count,Population,DT_RATE,DT_LB,DT_UB1,Significance,Geography_Code
+Crude/Age-Specific Rate,Asthma,Philadelphia,2023,Total,All Races,All Children (Age 0-17),"1,251","330,745",378.2,357.3,399.2,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2022,Total,All Races,All Children (Age 0-17),"1,019","338,710",300.8,282.4,319.3,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2021,Total,All Races,All Children (Age 0-17),734,"343,517",213.7,198.2,229.1,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2020,Total,All Races,All Children (Age 0-17),1200,"347,602",175.8,161.8,189.7,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2019,Total,All Races,All Children (Age 0-17),"2042","341,496",422.3,400.5,444.1,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2018,Total,All Races,All Children (Age 0-17),"2,123","343,932",617.3,591.0,643.5,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2017,Total,All Races,All Children (Age 0-17),"2,166","344,873",628.1,601.6,654.5,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2016,Total,All Races,All Children (Age 0-17),"2,445","345,969",706.7,678.7,734.7,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2015,Total,All Races,All Children (Age 0-17),"2,141","342,929",624.3,597.9,650.8,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2014,Total,All Races,All Children (Age 0-17),"2,550","344,120",741.0,712.3,769.8,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2013,Total,All Races,All Children (Age 0-17),"3,078","343,885",895.1,863.4,926.7,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2012,Total,All Races,All Children (Age 0-17),"3,506","346,235","1,012.6",979.1,"1,046.1",+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2011,Total,All Races,All Children (Age 0-17),"3,549","343,810","1,032.3",998.3,"1,066.2",+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2010,Total,All Races,All Children (Age 0-17),"3,318","343,837",965.0,932.2,997.8,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2009,Total,All Races,All Children (Age 0-17),"3,826","384,049",996.2,964.7,"1,027.8",+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2008,Total,All Races,All Children (Age 0-17),"3,136","356,061",880.7,849.9,911.6,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2007,Total,All Races,All Children (Age 0-17),"3,452","359,494",960.2,928.2,992.3,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2006,Total,All Races,All Children (Age 0-17),"3,354","361,196",928.6,897.2,960.0,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2005,Total,All Races,All Children (Age 0-17),"2,995","364,805",821.0,791.6,850.4,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2004,Total,All Races,All Children (Age 0-17),"3,186","372,065",856.3,826.6,886.0,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2003,Total,All Races,All Children (Age 0-17),"3,723","377,212",987.0,955.3,"1,018.7",+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2002,Total,All Races,All Children (Age 0-17),"3,071","381,802",804.3,775.9,832.8,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2001,Total,All Races,All Children (Age 0-17),"3,337","381,190",875.4,845.7,905.1,+,101
+Crude/Age-Specific Rate,Asthma,Philadelphia,2000,Total,All Races,All Children (Age 0-17),"2,795","383,469",728.9,701.9,755.9,+,101
+
