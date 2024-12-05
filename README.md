@@ -35,45 +35,41 @@ Run these files in order for best results.
 ## File Structure:
 # DATA-512-WILDFIRE-ANALYSIS
 
-## Directories
-- __pycache__
-- .vscode
-- initial data files
-  - `all disease deaths 1999-2020.txt`
-  - `Asthma_deaths_cdc.txt`
-  - `death asthma by. age.txt`
-  - `hospitalization Discharges Asthma kids per 100,000.csv`
-- intermediate data files
-  - `all disease deaths 1999-2020.txt`
-  - `asthma_kids_discharges_100k.csv`
-  - `forecasted_smoke_impact.csv`
-  - `future_smoke_data.csv`
-  - `shifted_training_data.csv`
-  - `smoke_metric_historical.csv`
-  - `smoke_metric.csv`
-  - `test_data_model.csv`
-  - `training_data_model.csv`
-- large_files
-- visualizations
-  - `visualization-1.png`
-  - `visualization-2.png`
-  - `visualization-3.png`
-
-## Files
-- `.gitignore`
-- `1-getting_wildlife_data.ipynb`
-- `2-getting_aqi_data.ipynb`
-- `3-cleaning_visualization_and_modelling.ipynb`
-- `4-cleaning_asthma_data.ipynb`
-- `5-modelling_and_forecasting_health_data.ipynb`
-- `constants.py`
-- `DATA 512 Part 2 - Extension Plan.pdf`
-- `Final report - Analysis of Wildfire Smoke and Its Impact on Asthma.pdf`
-- `LICENSE`
-- `README.md`
-- `Writeup DATA 512 Project Part -1.pdf`
-
-
+## Repository Structure
+├── pycache
+├── .vscode
+├── initial data files
+│   ├── all disease deaths 1999-2020.txt
+│   ├── Asthma_deaths_cdc.txt
+│   ├── death asthma by. age.txt
+│   └── hospitalization Discharges Asthma kids per 100,000.csv
+├── intermediate data files
+│   ├── all disease deaths 1999-2020.txt
+│   ├── asthma_kids_discharges_100000.csv
+│   ├── forecasted_smoke_impact.csv
+│   ├── future_smoke_data.csv
+│   ├── shifted_training_data.csv
+│   ├── smoke_metric_historical.csv
+│   ├── smoke_metric.csv
+│   ├── test_data_model.csv
+│   └── training_data_model.csv
+├── large_files
+├── visualizations
+│   ├── visualization-1.png
+│   ├── visualization-2.png
+│   └── visualization-3.png
+├── .gitignore
+├── 1-getting_wildlife_data.ipynb
+├── 2-getting_aqi_data.ipynb
+├── 3-cleaning_visualizaton_and_modelling.ipynb
+├── 4-cleaning_asthma_data.ipynb
+├── 5-modelling_and_forecasting_heath_data.ipynb
+├── constants.py
+├── DATA 512 Part 2 - Extension Plan.pdf
+├── Final report - Analysis of Wildfire Smoke and Its Impact on Asthma.pdf
+├── LICENSE
+├── README.md
+└── Writeup DATA 512 Project Part -1.pdf
 
 ## Generated Files
 
