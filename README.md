@@ -33,7 +33,7 @@ The code for this project is organized into the following notebooks:
 Run these files in order for best results.
 
 ## File Structure:
-# DATA-512-WILDFIRE-ANALYSIS
+#### DATA-512-WILDFIRE-ANALYSIS
 ```
 ├── __pycache__
 ├── .vscode
