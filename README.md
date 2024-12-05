@@ -194,6 +194,21 @@ Note: The above intermediary files are not available in github due to their larg
 - 'visulization-2.png' - a time series graph of total acres burned per year for the fires occurring in the specified distance from Philedelphia.
 - 'visulization-3.png' - a time series graph containing your fire smoke estimates Philedelphia and the AQI estimates for Philedelphia.
 
+## Packages Used:
+- pandas: A powerful data manipulation and analysis library for Python.
+- numpy: A fundamental package for scientific computing with Python, providing support for arrays and matrices.
+- polars: A fast DataFrame library for Rust and Python, designed for performance and ease of use.
+- matplotlib.pyplot: A plotting library for creating static, animated, and interactive visualizations in Python.
+- seaborn: A statistical data visualization library based on matplotlib, providing a high-level interface for drawing attractive and informative statistical graphics.
+- statsmodels.tsa.statespace.varmax.VARMAX: A module for estimating vector autoregressive moving average models with exogenous regressors.
+- statsmodels.tools.eval_measures.rmse: A function to calculate the root mean square error, a measure of the differences between predicted and observed values.
+- warnings: A built-in Python module for issuing warning messages.
+- sklearn.preprocessing.StandardScaler: A module for standardizing features by removing the mean and scaling to unit variance.
+- scipy.stats.pearsonr: A function to calculate the Pearson correlation coefficient and p-value for testing non-correlation.
+- scipy.stats.kendalltau: A function to calculate Kendall's tau, a measure of correlation between two variables.
+- scipy.stats: A module that contains a large number of probability distributions as well as a growing library of statistical functions.
+- statsmodels.tsa.statespace.sarimax.SARIMAX: A module for estimating seasonal autoregressive integrated moving average models with exogenous regressors.
+
 ## Issues Faced / Special Considerations
 
 - Some records in the AQI data had missing values. These records were filtered out during the cleaning process.
