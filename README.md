@@ -2,8 +2,7 @@
 
 ## Goal
 
-The goal of this project is to study the affects of wildfire smoke on Asthma cases and deaths in Philadelphia, PA and be able to get valuable insights during the process. First, we begin with understand how the wildfire has been historically and then try to compare it with AQI values to see if there is any connection. We also try to create a smoke estimate and try to predict how much the estimate is going to be in the next 20 years.
-
+The goal of this project is to study the affects of wildfire smoke on Asthma cases and deaths in Philadelphia, PA and be able to get valuable insights during the process. First, we begin with understand how the wildfire has been historically and then try to compare it with AQI values to see if there is any connection. We also try to create a smoke estimate and try to predict how much the estimate is going to be in the next 20 years. Using asthma hospitalizations and death data, we try to explain the impact of wildfire smoke on asthma.
 ## License
 
 ### Data Related License:
@@ -198,6 +197,21 @@ Note: The above intermediary files are not available in github due to their larg
 - 'visulization-2.png' - a time series graph of total acres burned per year for the fires occurring in the specified distance from Philedelphia.
 - 'visulization-3.png' - a time series graph containing your fire smoke estimates Philedelphia and the AQI estimates for Philedelphia.
 
+## Packages Used:
+- pandas: A powerful data manipulation and analysis library for Python.
+- numpy: A fundamental package for scientific computing with Python, providing support for arrays and matrices.
+- polars: A fast DataFrame library for Rust and Python, designed for performance and ease of use.
+- matplotlib.pyplot: A plotting library for creating static, animated, and interactive visualizations in Python.
+- seaborn: A statistical data visualization library based on matplotlib, providing a high-level interface for drawing attractive and informative statistical graphics.
+- statsmodels.tsa.statespace.varmax.VARMAX: A module for estimating vector autoregressive moving average models with exogenous regressors.
+- statsmodels.tools.eval_measures.rmse: A function to calculate the root mean square error, a measure of the differences between predicted and observed values.
+- warnings: A built-in Python module for issuing warning messages.
+- sklearn.preprocessing.StandardScaler: A module for standardizing features by removing the mean and scaling to unit variance.
+- scipy.stats.pearsonr: A function to calculate the Pearson correlation coefficient and p-value for testing non-correlation.
+- scipy.stats.kendalltau: A function to calculate Kendall's tau, a measure of correlation between two variables.
+- scipy.stats: A module that contains a large number of probability distributions as well as a growing library of statistical functions.
+- statsmodels.tsa.statespace.sarimax.SARIMAX: A module for estimating seasonal autoregressive integrated moving average models with exogenous regressors.
+
 ## Issues Faced / Special Considerations
 
 - Some records in the AQI data had missing values. These records were filtered out during the cleaning process.
@@ -224,6 +238,9 @@ References and API Documentation:
 2. USGS Wildland Fires Data: https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81
 3. GeoJSON: https://geojson.org/
 4. AQI calculation: https://www.airnow.gov/aqi/aqi-basics/
+<<<<<<< HEAD
 5. CDC Data: https://www.cdc.gov/nchs/nvss/mortality_public_use_data.htm
 6. PHC4 Data: https://www.phc4.org/data/policies.htm
 7. EDDIE: https://www.phaim1.health.pa.gov/EDD/WebForms/HospitalDischargeCntySt.aspx
+=======
+>>>>>>> 155cae37d30dbb3d753e9da0d09cf678cbab0df8
