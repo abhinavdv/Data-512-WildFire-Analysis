@@ -1,8 +1,9 @@
-# Analyzing Air Quality Index (AQI) Data
+# WildLand Fire Analysis for Philedelphia, PA
 
 ## Goal
 
 The goal of this project is to study the affects of wildfire smoke on Asthma cases and deaths in Philadelphia, PA and be able to get valuable insights during the process. First, we begin with understand how the wildfire has been historically and then try to compare it with AQI values to see if there is any connection. We also try to create a smoke estimate and try to predict how much the estimate is going to be in the next 20 years. Using asthma hospitalizations and death data, we try to explain the impact of wildfire smoke on asthma.
+
 ## License
 
 ### Data Related License:
@@ -198,6 +199,7 @@ Note: The above intermediary files are not available in github due to their larg
 - 'visulization-3.png' - a time series graph containing your fire smoke estimates Philedelphia and the AQI estimates for Philedelphia.
 
 ## Packages Used:
+
 - pandas: A powerful data manipulation and analysis library for Python.
 - numpy: A fundamental package for scientific computing with Python, providing support for arrays and matrices.
 - polars: A fast DataFrame library for Rust and Python, designed for performance and ease of use.
@@ -238,9 +240,10 @@ References and API Documentation:
 2. USGS Wildland Fires Data: https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81
 3. GeoJSON: https://geojson.org/
 4. AQI calculation: https://www.airnow.gov/aqi/aqi-basics/
-<<<<<<< HEAD
 5. CDC Data: https://www.cdc.gov/nchs/nvss/mortality_public_use_data.htm
 6. PHC4 Data: https://www.phc4.org/data/policies.htm
 7. EDDIE: https://www.phaim1.health.pa.gov/EDD/WebForms/HospitalDischargeCntySt.aspx
-=======
->>>>>>> 155cae37d30dbb3d753e9da0d09cf678cbab0df8
+
+## Conclusion
+
+In this analysis, the initial question was to understand how wildfire smoke levels impact air quality and health outcomes in Philadelphia, particularly concerning asthma-related hospitalizations and deaths. The findings clearly demonstrate a significant correlation between smoke exposure and increased health risks, especially for vulnerable populations such as children and older adults. The analysis revealed that rising smoke levels, driven by increased wildfire activity, are expected to lead to more hospitalizations and deaths if current trends continue. However, the study also highlighted the potential benefits of smoke reduction strategies, with substantial improvements in health outcomes through even moderate reductions in smoke levels. These insights emphasize the importance of addressing wildfire smoke as a public health issue and implementing mitigation measures to protect communities and reduce healthcare burdens. A few recommendations for the same have also been provided.
